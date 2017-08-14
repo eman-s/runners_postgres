@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>runners</title>
+  </head>
+  <body>
+    <h1>Runners</h1>
+    <a href="/add_runner">New Runner</a>
+    <div class="runners">
+      {{#runners}}
+      <p>Name: <a href="/{{bib_id}}">{{name}}</a></p>
+      <p>Division: {{division}}</p>
+      <p>Sponsor: {{sponsor}}</p>
+      <br>
+      {{/runners}}
+
+    </div>
+
+  </body>
+</html>

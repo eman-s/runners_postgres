@@ -51,4 +51,24 @@ VALUES(
   'Bro',
   'Lockheed Martin',
   'Juan Salicrup'
+),
+(
+  'Prison',
+  'Florida',
+  'Paul Newman'
+),
+(
+  'Stormwind',
+  'World of Warcraft',
+  'Leeroy Jenkins'
+),
+(
+  'Gamma',
+  'Stark Industries',
+  'Bruce Banner'
+),
+(
+  'Powerlifter',
+  'Marlon Core',
+  'Marlon Bhoorasingh'
 );
