@@ -26,6 +26,30 @@ app.get('/', (req, res, next) => {
   });
 });
 
+app.get('/add_runner', (req,res) => {
+  res.render('add')
+});
+
+app.post('/add_runner', (req, res, next) => {
+  let addRunner =
+  `INSERT INTO runner(
+    division,
+    sponsor,
+    name
+  )
+  VALUES(
+    '${req.body.division}',
+    '${req.body.sponsor}',
+    '${req.body.name}'
+  )`;
+  db.query(addRunner, (err) =>{
+    if (err){
+      return next(err)
+    }
+    res.redirect('/')
+  });
+});
+
 app.get('/:id', (req, res, next) => {
   const id = req.params.id
   db.query(`SELECT * FROM runner WHERE bib_id = ${id}`, (err, results) => {

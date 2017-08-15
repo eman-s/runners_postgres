@@ -7,16 +7,15 @@
   <body>
     <form action="/add_runner" method="post">
       <div class="fields" id="fields">
-        <span>New Record ID: </span>
-        <input type="text" name="id" value="{{newId}}" readonly>
-        <input type="text" placeholder="Runner's Name" name="name">
+        <span>New Runner: </span>
+        <input type="text" name="bib_id" value="{{newId}}" readonly>
+        <input type="text" placeholder="Runner's Full Name" name="name">
         <input type="text" placeholder="Sponsor" name="sponsor">
         <input type="text" placeholder="Division" name="division">
       </div>
       <div class="footer">
-        <button>Save Senator</button>
+        <button>Save Runner</button>
       </div>
     </form>
-hello
   </body>
 </html>
